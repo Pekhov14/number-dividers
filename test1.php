@@ -6,9 +6,12 @@ function number_dividers ($a)
 	while($i <= $a)
 	{
 		if ($a % $i == 0)
-			echo $i . ", ";
+			if ($i == $a) 
+				echo $i;
+			else 
+				echo $i . ", ";
 		$i++;
 	}
 }
 
-number_dividers(9);
+number_dividers(12);
